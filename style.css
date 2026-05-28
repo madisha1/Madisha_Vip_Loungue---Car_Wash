@@ -1,0 +1,619 @@
+/* =========================
+   MADISHA VIP LOUNGE
+   PREMIUM UPDATED CSS
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+html,body{
+    width:100%;
+    overflow-x:hidden;
+}
+
+/* BODY */
+
+body{
+    font-family:'Poppins',sans-serif;
+    color:white;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.82),
+    rgba(0,0,0,0.88)),
+    url("1000843521.png");
+
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+}
+
+/* IMAGES */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero{
+    position:relative;
+    height:100vh;
+    overflow:hidden;
+}
+
+/* HERO IMAGE */
+
+.hero-bg{
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    top:0;
+    left:0;
+}
+
+/* OVERLAY */
+
+.overlay{
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.65);
+    top:0;
+    left:0;
+}
+
+/* NAVBAR */
+
+.navbar{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 8%;
+    z-index:999;
+
+    background:rgba(0,0,0,0.45);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.logo{
+    color:gold;
+    font-size:32px;
+    font-weight:900;
+    letter-spacing:2px;
+}
+
+.navbar ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.4s;
+}
+
+.navbar ul li a:hover{
+    color:gold;
+}
+
+/* HERO CONTENT */
+
+.hero-content{
+    position:relative;
+    z-index:10;
+
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+
+    text-align:center;
+    padding:20px;
+}
+
+.hero-content h2{
+    font-size:75px;
+    font-weight:900;
+    max-width:1000px;
+    line-height:1.1;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:24px;
+    color:#ddd;
+    margin-bottom:35px;
+}
+
+.hero-btn{
+    padding:16px 45px;
+    background:gold;
+    color:black;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:700;
+    transition:0.4s;
+}
+
+.hero-btn:hover{
+    transform:scale(1.08);
+    background:white;
+}
+
+/* =========================
+   GENERAL SECTIONS
+========================= */
+
+section{
+    width:95%;
+    margin:30px auto;
+    padding:90px 8%;
+
+    background:rgba(0,0,0,0.72);
+    backdrop-filter:blur(6px);
+
+    border-radius:30px;
+    border:1px solid rgba(255,255,255,0.06);
+}
+
+/* TITLES */
+
+.section-title{
+    text-align:center;
+    font-size:55px;
+    color:gold;
+    margin-bottom:60px;
+    font-weight:900;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+/* =========================================
+   ABOUT
+========================================= */
+
+.about{
+    padding:90px 8%;
+}
+
+.about-content{
+    max-width:900px;
+    margin:auto;
+}
+
+/* TITLE */
+
+.about-content h2{
+    font-size:55px;
+    font-weight:900;
+
+    margin-bottom:25px;
+
+    color:white;
+}
+
+/* TEXT */
+
+.about-content p{
+    font-size:20px;
+
+    color:#d7d7d7;
+
+    line-height:1.8;
+
+    margin-bottom:18px;
+}
+
+/* =========================
+   EVENTS
+========================= */
+
+.event-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.event-card{
+    background:#0f0f0f;
+    padding:40px;
+    border-radius:25px;
+    border:1px solid #222;
+    transition:0.4s;
+}
+
+.event-card:hover{
+    transform:translateY(-10px);
+    border-color:gold;
+}
+
+.event-card h3{
+    color:gold;
+    margin-bottom:20px;
+    font-size:28px;
+}
+
+.event-card p{
+    color:#ddd;
+    line-height:1.8;
+    margin-bottom:20px;
+}
+
+.event-card span{
+    color:white;
+    font-weight:700;
+}
+
+/* =========================================
+   CAR WASH
+========================================= */
+
+.carwash{
+    padding:90px 8%;
+}
+
+.carwash-content{
+    max-width:900px;
+    margin:auto;
+}
+
+/* TITLES */
+
+.carwash-content h2{
+    font-size:55px;
+    font-weight:900;
+
+    margin-bottom:25px;
+
+    color:white;
+}
+
+.carwash-content h3{
+    font-size:32px;
+
+    color:gold;
+
+    margin-bottom:30px;
+}
+
+/* TEXT */
+
+.carwash-content p{
+    font-size:20px;
+
+    color:#d7d7d7;
+
+    line-height:1.8;
+
+    margin-bottom:20px;
+}
+
+/* PRICE BOXES */
+
+.wash-prices{
+    display:grid;
+
+    grid-template-columns:
+    repeat(auto-fit,minmax(200px,1fr));
+
+    gap:22px;
+
+    margin-top:45px;
+}
+
+.wash-box{
+    padding:30px 20px;
+
+    border-radius:22px;
+
+    background:
+    rgba(10,10,20,0.10);
+
+    border:
+    1px solid rgba(255,255,255,0.12);
+
+    backdrop-filter:blur(6px);
+
+    text-align:center;
+
+    transition:0.4s;
+}
+
+.wash-box:hover{
+    transform:translateY(-8px);
+
+    border-color:
+    rgba(255,215,0,0.25);
+}
+
+.wash-box h4{
+    font-size:18px;
+
+    margin-bottom:15px;
+}
+
+.wash-box span{
+    color:gold;
+
+    font-size:35px;
+
+    font-weight:800;
+}
+
+/* =========================
+   DJ SECTION
+========================= */
+
+.dj-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+}
+
+.dj-card{
+    background:#111;
+    border-radius:25px;
+    overflow:hidden;
+    transition:0.4s;
+    text-align:center;
+}
+
+.dj-card:hover{
+    transform:translateY(-10px);
+}
+
+.dj-card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.dj-card h3{
+    padding:20px;
+    font-size:24px;
+}
+
+/* =========================
+   MENU
+========================= */
+
+.menu-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.menu-box{
+    background:#111;
+    padding:40px;
+    border-radius:25px;
+}
+
+.menu-box h3{
+    color:gold;
+    margin-bottom:30px;
+    font-size:30px;
+}
+
+.menu-item{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #333;
+    padding-bottom:15px;
+    margin-bottom:20px;
+    font-size:18px;
+}
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+}
+
+.gallery-container img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.4s;
+}
+
+.gallery-container img:hover{
+    transform:scale(1.03);
+}
+
+/* =========================
+   CONTACT
+========================= */
+
+.contact-box{
+    text-align:center;
+}
+
+.contact-box p{
+    font-size:24px;
+    margin-bottom:20px;
+}
+
+.socials{
+    margin-top:40px;
+}
+
+.socials a{
+    width:65px;
+    height:65px;
+
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#111;
+    color:gold;
+
+    border-radius:50%;
+    text-decoration:none;
+
+    margin:10px;
+    font-size:26px;
+
+    transition:0.4s;
+}
+
+.socials a:hover{
+    transform:translateY(-8px);
+    background:gold;
+    color:black;
+}
+
+/* =========================================
+   LOCATION SECTION
+========================================= */
+
+.location{
+    padding:90px 8%;
+}
+
+.location-text{
+    font-size:20px;
+
+    color:#d7d7d7;
+
+    margin-bottom:35px;
+
+    line-height:1.8;
+}
+
+/* MAP */
+
+.map-container{
+    overflow:hidden;
+
+    border-radius:30px;
+
+    border:
+    1px solid rgba(255,123,0,0.15);
+
+    box-shadow:
+    0 10px 35px rgba(0,0,0,0.35);
+}
+
+.map-container iframe{
+    width:100%;
+
+    border:none;
+
+    filter:grayscale(0.1)
+    contrast(1.1)
+    brightness(0.95);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#aaa;
+    font-size:16px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:1000px){
+
+    .hero-content h2{
+        font-size:50px;
+    }
+
+    .section-title{
+        font-size:42px;
+    }
+
+    .about-text h2,
+    .carwash-content h3{
+        font-size:42px;
+    }
+
+}
+
+@media(max-width:850px){
+
+    .navbar{
+        flex-direction:column;
+        gap:20px;
+        padding:20px;
+    }
+
+    .navbar ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .hero-content h2{
+        font-size:38px;
+    }
+
+    .hero-content p{
+        font-size:18px;
+    }
+
+    section{
+        padding:70px 25px;
+    }
+
+}
+
+@media(max-width:600px){
+
+    .logo{
+        font-size:24px;
+        text-align:center;
+    }
+
+    .section-title{
+        font-size:32px;
+    }
+
+    .about-text h2,
+    .carwash-content h3{
+        font-size:34px;
+    }
+
+    .hero-content h2{
+        font-size:30px;
+    }
+
+    .hero-btn{
+        padding:14px 30px;
+    }
+
+}
